@@ -9,11 +9,16 @@ public class d2 {
         double salaryPerHour = in.nextDouble();
         double salary =days*salaryPerHour+8;
         System.out.printf(" Your salary is %5.2f$",salary);
-        System.out.println(" Your tax1:"+salary/100*5);
-        double tax1= in.nextDouble();
-        int tax2=1300;
-        System.out.println("Your tax2:"+salary-tax2);
-        System.out.println(salary-tax1-tax2);
+        double tax1= salary*0.05;
+        System.out.println(" Your salary without tax1:");
+        System.out.println(salary-tax1);
+        double tax2= salary -tax1-1300;
+        System.out.println("Your salary without tax2:");
+        System.out.println(tax2);
+        System.out.println("Your tax1 :");
+        System.out.println(tax1);
+        System.out.println("Your tax2:");
+        System.out.println(1300);
         in.close();
 
 
